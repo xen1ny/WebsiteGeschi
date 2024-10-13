@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Flip Cards</title>
+  <link rel="stylesheet" href="flipcards.css"> 
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="logo">
+        <a href="https://www.gesetze-im-internet.de/gg/BJNR000010949.html">Das Grundgesetz</a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+        &#9776; 
+    </div>
+    <ul class="nav-menu" id="navMenu">
+        <li><a href="haupt.html">Über Das Projekt</a></li>
+        <li><a href="Uberuns.html">Über Uns</a></li>
+        <li><a href="flipcards.html"><b style="font-size: 3rem;">Flip-Cards</b></a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+  </div> 
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 98" heigth="98px" width="100%" class="svg-container">
+    <path fill="#10394d" fill-opacity="1" d=M0,192L40,192C80,192,160,192,240,165.3C320,139,400,85,480,69.3C560,53,640,75,720,122.7C800,171,880,245,960,272C1040,299,1120,277,1200,277.3C1280,277,1360,299,1400,309.3L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z transform="scale(1, 0.3)" class="svg-container"/>
+  </svg>
+
+
+
+  <div class="card-container">
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>Demokratie</h2>
+        </div>
+        <div class="flip-card-back">
+          <img src="Bilder/b7f0398a-e259-4c9c-b162-0b17986872a5-Photoroom.png" alt="Demokratie">
+          <p class="cards">
+            Demokratie ist eine 
+            Regierungsform, bei der
+            das Volk die politische 
+            Macht besitzt und durch 
+            Wahlen seine Vertreter bestimmt.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>Freiheit</h2>
+        </div>
+        <div class="flip-card-back">
+          <img src="Bilder/f0a1b92b-e372-4ad1-ba43-66eed74a79c1-Photoroom.png" alt="Freiheit">
+          <p class="cards">
+            Demokratie als Regierungsform ermöglicht es 
+            den Bürgern, Freiheit durch Teilhaben an politischen 
+            Entscheidungen und Wahlen auszuüben.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>Gleichheit</h2>
+        </div>
+        <div class="flip-card-back">
+          <img src="Bilder/8b20b3c0-bf16-4f28-b8b4-d73125cdef26-Photoroom.png" alt="Gleichheit">
+          <p class="cards">
+            Gleichheit in der Demokratie bedeutet, dass alle Bürger/-Innen
+            vor dem Gesetz gleich sind. Sie haben alle selbe Rechte und Chancen.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>Regierungsform</h2>
+        </div>
+        <div class="flip-card-back">
+          <img src="Bilder/21c8247c-d89e-4cc8-b946-5962856edc18-Photoroom.png" alt="Regierungsform">
+          <p class="cards">
+            Eine Regierungsform definiert die Art und Weise, wie ein Staat 
+            organisiert ist und wie politische Macht ausgeübt wird.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  
+  <script src="flipcards.js"></script>
+</body>
+</html>
